@@ -9,20 +9,20 @@ const Login = () => {
   
   return ( 
     <>
-    <div className='flex w-full  '>
+    <div className='flex w-full  bg-white'>
     
-    <div className='bg-[#6063fb] w-[50%] p-2'>
+    <div className='bg-[#6063fb] hidden md:flex w-[50%] p-2'>
      
 
     </div>
-    <div className='h-[100vh] bg-white w-[50%] flex justify-center items-center'>
+    <div className='h-[100vh] bg-white w-[100%] md:w-[50%] flex justify-center items-center'>
         
        
     <div className='w-[100%] flex flex-col justify-center items-center'>
         <h2 className='text-center font-semibold text-2xl popins-fonts'>
           LOGIN FORM
         </h2>
-        <form className='w-[60%] '>
+        <form className='w-[90%] md:w-[70%] lg:w-[60%]'>
           <div >
             <label 
             htmlFor=""

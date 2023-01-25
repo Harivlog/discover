@@ -14,11 +14,11 @@ const SignUp = () => {
 
   return (
     <div className='flex w-full bg-white '>
-     <div className='bg-[#6063fb] w-[50%] p-2'>
+     <div className='bg-[#6063fb] hidden md:flex  w-[50%] p-2'>
         <Carousel
         autoPlay={true}
         >
-          <div className='haris'>
+          <div className=''>
             <img className='w-[20%] h-[20%]' src={img} width={100} height={100}/>
              </div>
           <div className='text-white'>
@@ -26,7 +26,7 @@ const SignUp = () => {
             
              </div>
 
-          <div className='haris w-[50%] h-[20rem] flex justify-center items-center'>
+          <div className=' w-[50%] h-[20rem] flex justify-center items-center'>
           <img className='w-[100%] h-[100%]' src={img2} width={100} height={100}/>
             
              </div>
@@ -34,11 +34,11 @@ const SignUp = () => {
         </Carousel>
 
      </div>
-    <div className='w-[50%]  flex flex-col justify-center items-center my-12'>
+    <div className='w-[100%]  md:w-[50%]  flex flex-col justify-center items-center my-12'>
         <h2 className='text-center font-semibold text-2xl popins-fonts'>
           SignUp FORM
         </h2>
-        <form className='w-[60%] '>
+        <form className='md:w-[70%] lg:w-[60%] '>
           <div >
             <label 
             htmlFor=""
