@@ -9,8 +9,9 @@ module.exports = {
     extend: {
       colors : {
         primary_clr : '#6063fb',
-        border_clr : '##9b9dfd',
-
+        border_clr : '#9b9dfd',
+        white_clr : '#ffffff',
+        
         input_field : '#f7f7ff'
       },
     },
