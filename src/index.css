@@ -11,6 +11,18 @@
 .roboto-fonts{
   font-family: 'Roboto', sans-serif;
 }
+.border {
+  border: 2px solid  #4649FF;
+}
+.border:hover{
+  border: 2px solid transparent;
+}
+.border-hover{
+  border: 2px solid transparent;
+}
+.border-hover:hover{
+  border: 2px solid #4649FF;
+}
 .popins-fonts{
   font-family: 'Poppins', sans-serif;
 } 
