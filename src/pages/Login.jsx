@@ -6,6 +6,8 @@ import {HiOutlineMail, HiOutlineLockClosed} from 'react-icons/hi'
 import {loginSchema} from '../schemas'
 // formik the form hook--------------
 import { Formik,useFormik } from 'formik';
+import { FadeCarousel, TextAnimationed } from '../components'
+
 
 
 // initial value get formik-----------
@@ -31,10 +33,14 @@ const {values, handleChange,handleSubmit,handleBlur,errors, touched} = useFormik
    
     <div className='flex w-full  bg-white'>
     
-    <div className='bg-primary_clr hidden md:flex w-[50%] p-2'>
-     
-
-    </div>
+    <div className="bg-primary_clr hidden md:flex flex-col  w-[50%] p-2 justify-center">
+        <div className="  h-[3rem] flex justify-center ">
+          <div className="  w-[80%]">
+            <TextAnimationed />
+          </div>
+        </div>
+        <FadeCarousel />
+      </div>
     <div className='h-[100vh] bg-white_clr w-[100%] md:w-[50%] flex justify-center items-center'>
         
        
@@ -99,11 +105,12 @@ const {values, handleChange,handleSubmit,handleBlur,errors, touched} = useFormik
           <div className='text-right'>
             <a href='/' className=' text-[0.9rem] roboto-fonts text-gray-400 '>Forget Password</a>
             </div>
+            <Link to='/profile' className=''>
           <button
-           className='flex justify-center items-center w-[100%] roboto-fonts bg-gradient-to-r to-primary_clr from-blue-500 py-3 rounded-lg my-3 text-white_clr btn-white_clr hover:text-primary_clr border-2 border-transparent hover:border-primary_clr  hover:to-white_clr hover:from-white_clr      '
+           className='flex justify-center items-center w-[100%] roboto-fonts bg-gradient-to-r to-primary_clr from-blue-500 py-3 rounded-lg my-3 text-white_clr btn-white_clr hover:text-primary_clr border-2 border-transparent hover:border-primary_clr  hover:to-white_clr hover:from-white_clr border-hover'
            type='submit'
-           >LOGIN TO DISCOVER</button>
-            <button className='w-[100%] roboto-fonts border-2 border-primary_clr py-3 rounded-lg my-3 text-primary_clr hover:text-white_clr hover:bg-gradient-to-r to-primary_clr from-blue-500'>LOGIN WITH GOOGLE</button>
+           >LOGIN TO DISCOVER</button></Link>
+            <button className='w-[100%] roboto-fonts  py-3 rounded-lg my-3 text-primary_clr hover:text-white_clr hover:bg-gradient-to-r to-primary_clr from-blue-500 border'>LOGIN WITH GOOGLE</button>
           <div  className="flex ">
           
           <p href='/' className=' text-[0.9rem]  roboto-fonts text-gray-400  '>Not have any account </p>

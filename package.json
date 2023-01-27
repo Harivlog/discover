@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.7.0",
+    "react-type-animation": "^2.1.2",
     "yup": "^0.32.11"
   },
   "devDependencies": {
